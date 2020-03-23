@@ -40,12 +40,15 @@ I calibrated the sensor using an estimated 430mL for a medium breath. Integratin
 - Reducing the tube diameter even farther (from 1.75” to ~1”) will increase sensitivity with likely no downsides.
 - There is time omitted between the inhales and the exhales on the above graph (the ADC was only triggering above a threshold)
 - 300-400mL is actually very little volume! That’s the same amount of space as a 1” tube x 18” long. So the air passing through the sensor will likely not get to the patient’s lungs for two or three inhales.
+- Using a 1” diameter tube and normal inhale of 500mL gives an average air velocity of 0.328 m/s
+	- 500 ml / (1.27 cm ^2 * pi) /3 sec/ 100.
 
 ## Summary Results and guesses
 - Using this sensor or something similar and reducing the diameter of the tube to meet the required sensitivity seems promising.
 - Need an airflow sensor to calibrate an airflow sensor. Calibration will need to happen over low, medium, and high air volumes and possibly for each individual sensor produced.
 - I’m guessing the accuracy will depend on the sensor selection, tube diameter and placement in the tube. Once calibrated, this current test jig (with the large 1.75” diameter body) is probably +/- 40mL.
 - If the diameter of the tube remains 1” or greater, the flow rates will remain low, and I’m guessing inlet and exit conditions ( greater than 2”) to the sensor are going to be negligible
+- Here is a US manufacturer of a similar sensor in PCB mount package [Degree Controls, inc](https://degree-controls-inc.myshopify.com/pages/rfs300)
 
 
 ### [Excel Data Here](https://docs.google.com/spreadsheets/d/1sM5TJEcifyFlh12o5uc7Eor9HHSdNQOhqdpWKy2MHG0/edit?usp=sharing)
