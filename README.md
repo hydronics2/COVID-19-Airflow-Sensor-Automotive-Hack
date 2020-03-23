@@ -10,7 +10,7 @@ This is a quick study of using an inexpensive off-the-shelf automotive airflow t
 
 Reading from an automotive mass airflow sensor using a microController 12bit ADC, 20ms interval
 
-01
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/01mass_airflow_sensor.PNG)
 [Picture mass air flow sensor](https://www.aliexpress.com/i/33021814341.html)
 
 Initial reading trying to inhale/exhale into the 3” tube was poor. Only medium to large breaths would trigger outputs to the ADC.
@@ -18,10 +18,10 @@ Initial reading trying to inhale/exhale into the 3” tube was poor. Only medium
 Only big breaths trigger… read ~200-350 ADC with large breadth
 
 
-02mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/02mass_airflow_sensor.PNG)
 Modified Tube within a Tube
 Modified the tube diameter to 1.75” using a paper towel roll
-03mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/03mass_airflow_sensor.PNG)
 
 Big breaths adc peak 900, 0.725volts
 Medium breaths peak at ~600
@@ -29,7 +29,7 @@ Smallest breath I can take ~400
 ….. Giant forceful breaths.. I get dizzy after a few… gets up to ~3000 (2.4volts)
 
 I calibrated the sensor using an estimated 430mL for a medium breath. Integrating under the curve for each breath gives an estimated volume.
-04mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/04mass_airflow_sensor.PNG)
 
 Notes:
 - Not sure why the exhales are so noisy. It has something to do with the flow rates being below spec in that direction
@@ -58,23 +58,23 @@ Some models have the pin numbers printed on the body
 Pin 1 Ground
 Pin 2 Signal
 Pin 3 Power 7.5-12 volts, 76ma
-05mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/05mass_airflow_sensor.PNG)
 
 
 
-06mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/06mass_airflow_sensor.PNG)
 Picture. Final test setup
 
-07mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/07mass_airflow_sensor.PNG)
 Picture. Decreased the diameter to 1.75”
 
-08mass_airflow_sensor.PNG
-09mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/08mass_airflow_sensor.PNG)
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/09mass_airflow_sensor.PNG)
 
-10mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/10mass_airflow_sensor.PNG)
 Picture. removing the straightening vanes
 
-11mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/11mass_airflow_sensor.PNG)
 
-12mass_airflow_sensor.PNG
-13mass_airflow_sensor.PNG
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/12mass_airflow_sensor.PNG)
+[foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/13mass_airflow_sensor.PNG)
