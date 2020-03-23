@@ -35,7 +35,7 @@ I calibrated the sensor using an estimated 430mL for a medium breath. Integratin
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/04mass_airflow_sensor.PNG)
 
 ### Notes:
-- Not sure why the exhales are so noisy. It has something to do with the flow rates being below spec in that direction
+- Exhales are noisy because sensor is not made to work in both directions
 - The inhales are actually the opposite direction as the arrow on the sensor body. I tried it both ways and at the flow rates we’re trying to measure, there is more sensitivity in the opposite direction of the intended airflow..
 - Reducing the tube diameter even farther (from 1.75” to ~1”) will increase sensitivity with likely no downsides.
 - There is time omitted between the inhales and the exhales on the above graph (the ADC was only triggering above a threshold)
@@ -61,25 +61,29 @@ Some models have the pin numbers printed on the body
 - Pin 1 Ground
 - Pin 2 Signal
 - Pin 3 Power 7.5-12 volts, 76ma
+
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/05mass_airflow_sensor.PNG)
+
 
 
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/06mass_airflow_sensor.PNG)
 
-Picture. Final test setup
+#### Picture. Final test setup
 
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/07mass_airflow_sensor.PNG)
 
-Picture. Decreased the diameter to 1.75”
+#### Picture. Decreased the diameter to 1.75”
 
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/08mass_airflow_sensor.PNG)
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/09mass_airflow_sensor.PNG)
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/10mass_airflow_sensor.PNG)
-Picture. removing the straightening vanes
+
+#### Picture. removing the straightening vanes
+
 
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/11mass_airflow_sensor.PNG)
