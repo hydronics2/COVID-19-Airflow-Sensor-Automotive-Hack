@@ -11,16 +11,19 @@ This is a quick study of using an inexpensive off-the-shelf automotive airflow t
 Reading from an automotive mass airflow sensor using a microController 12bit ADC, 20ms interval
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/01mass_airflow_sensor.PNG)
+
 [Picture mass air flow sensor](https://www.aliexpress.com/i/33021814341.html)
 
 Initial reading trying to inhale/exhale into the 3” tube was poor. Only medium to large breaths would trigger outputs to the ADC.
-12 bit ADC => 4096
-Only big breaths trigger… read ~200-350 ADC with large breadth
+- 12 bit ADC => 4096
+- Only big breaths trigger… read ~200-350 ADC with large breadth
 
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/02mass_airflow_sensor.PNG)
-Modified Tube within a Tube
+
+### Modified Tube within a Tube
 Modified the tube diameter to 1.75” using a paper towel roll
+
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/03mass_airflow_sensor.PNG)
 
 Big breaths adc peak 900, 0.725volts
@@ -31,48 +34,53 @@ Smallest breath I can take ~400
 I calibrated the sensor using an estimated 430mL for a medium breath. Integrating under the curve for each breath gives an estimated volume.
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/04mass_airflow_sensor.PNG)
 
-Notes:
+### Notes:
 - Not sure why the exhales are so noisy. It has something to do with the flow rates being below spec in that direction
 - The inhales are actually the opposite direction as the arrow on the sensor body. I tried it both ways and at the flow rates we’re trying to measure, there is more sensitivity in the opposite direction of the intended airflow..
 - Reducing the tube diameter even farther (from 1.75” to ~1”) will increase sensitivity with likely no downsides.
 - There is time omitted between the inhales and the exhales on the above graph (the ADC was only triggering above a threshold)
 - 300-400mL is actually very little volume! That’s the same amount of space as a 1” tube x 18” long. So the air passing through the sensor will likely not get to the patient’s lungs for two or three inhales.
 
-Summary Results and guesses
+## Summary Results and guesses
 - Using this sensor or something similar and reducing the diameter of the tube to meet the required sensitivity seems promising.
 - Need an airflow sensor to calibrate an airflow sensor. Calibration will need to happen over low, medium, and high air volumes and possibly for each individual sensor produced.
 - I’m guessing the accuracy will depend on the sensor selection, tube diameter and placement in the tube. Once calibrated, this current test jig (with the large 1.75” diameter body) is probably +/- 40mL.
 - If the diameter of the tube remains 1” or greater, the flow rates will remain low, and I’m guessing inlet and exit conditions ( greater than 2”) to the sensor are going to be negligible
 
 
-Excel Data Here
+### [Excel Data Here](https://docs.google.com/spreadsheets/d/1sM5TJEcifyFlh12o5uc7Eor9HHSdNQOhqdpWKy2MHG0/edit?usp=sharing)
 
-Mass Airflow Sensor
-Purchased locally [here](https://www.oreillyauto.com/detail/b/blue-streak-electronics-5882/engine-sensors---emissions-25132/engine-sensors-25049/mass-air-flow-sensor-meter-12040/2c278c9432b0/blue-streak-electronics-mass-air-flow-sensor-new/mf21041n/6102972?q=mf21041n&pos=0) for $57, Blue Streak #MF21041N
-Sensor type: hot wire anemometer (guessing here)
-This MAF sensor is also found under these part numbers OK5771321 8ET009142441 AMMA-751 AMMA751 0891067
-Also on aliexpress for ~$22 [https://www.aliexpress.com/i/33021814341.html](https://www.aliexpress.com/i/33021814341.html)
+### Mass Airflow Sensor
+- Purchased locally [here](https://www.oreillyauto.com/detail/b/blue-streak-electronics-5882/engine-sensors---emissions-25132/engine-sensors-25049/mass-air-flow-sensor-meter-12040/2c278c9432b0/blue-streak-electronics-mass-air-flow-sensor-new/mf21041n/6102972?q=mf21041n&pos=0) for $57, Blue Streak #MF21041N
+- Sensor type: hot wire anemometer (guessing here)
+- This MAF sensor is also found under these part numbers OK5771321 8ET009142441 AMMA-751 AMMA751 0891067
+- Also on aliexpress for ~$22 [https://www.aliexpress.com/i/33021814341.html](https://www.aliexpress.com/i/33021814341.html)
 
 Pinout
 Some models have the pin numbers printed on the body
-Pin 1 Ground
-Pin 2 Signal
-Pin 3 Power 7.5-12 volts, 76ma
+- Pin 1 Ground
+- Pin 2 Signal
+- Pin 3 Power 7.5-12 volts, 76ma
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/05mass_airflow_sensor.PNG)
 
 
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/06mass_airflow_sensor.PNG)
+
 Picture. Final test setup
 
+
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/07mass_airflow_sensor.PNG)
+
 Picture. Decreased the diameter to 1.75”
+
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/08mass_airflow_sensor.PNG)
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/09mass_airflow_sensor.PNG)
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/10mass_airflow_sensor.PNG)
 Picture. removing the straightening vanes
+
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/11mass_airflow_sensor.PNG)
 
