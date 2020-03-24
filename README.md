@@ -39,7 +39,7 @@ I calibrated the sensor using an estimated 430mL for a medium breath. Integratin
 - The inhales are actually the opposite direction as the arrow on the sensor body. I tried it both ways and at the flow rates we’re trying to measure, there is more sensitivity in the opposite direction of the intended airflow..
 - Reducing the tube diameter even farther (from 1.75” to ~1”) will increase sensitivity with likely no downsides.
 - There is time omitted between the inhales and the exhales on the above graph (the ADC was only triggering above a threshold)
-- 300-400mL is actually very little volume! That’s the same amount of space as a 1” tube x 18” long. So the air passing through the sensor will likely not get to the patient’s lungs for two or three inhales.
+- 300-400mL is actually very little volume! That’s the same amount of space as a 1” tube x 38” long. So the air passing through the sensor will likely not get to the patient’s lungs until the second inhale depending on location of sensor.
 - Using a 1” diameter tube and normal inhale of 500mL gives an average air velocity of 0.328 m/s
 	- 500 ml / (1.27 cm ^2 * pi) /3 sec/ 100.
 
