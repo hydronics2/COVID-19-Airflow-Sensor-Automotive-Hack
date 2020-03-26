@@ -14,6 +14,31 @@ Reading from an automotive mass airflow sensor using a microController 12bit ADC
 
 [Picture mass air flow sensor](https://www.aliexpress.com/i/33021814341.html)
 
+
+###  --- Updates Wednesday March 25th --
+
+ Removed the sensor from the base and installed in a 1" tube. Only showing inhales
+- used bags of air and buckets of water to calibrate sensor to volume of air (mL)
+- I'm getting really good repeatable data..  but can only say +/- 50mL but could be better... as measuring with plastic bags is a pain
+- showing what I thought were normal inhale breaths for me at ~1200mL each (6', 150lbs male)
+- these breaths are larger than normal tidal volume delivered during mechanical ventilation (should be closer to ~350-500 mL)
+- I think plus/minus 25mL should be fine... previously the spec said +/- 10mL...
+- I haven't wired the pressure sensor as I don't think it'll read anything interesting until we can introduce PEEP which needs to happen in a closed system, right? 
+
+![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/automotive_sensor.PNG)
+![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/sensor_in_tube.PNG)
+![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/militers_per_second_graph.PNG)
+![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/sensor_removed.PNG)
+![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/sensor_into_tube.PNG)
+![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/500ml.PNG)
+
+
+
+
+
+
+
+### Monday March 23rd
 Initial reading trying to inhale/exhale into the 3” tube was poor. Only medium to large breaths would trigger outputs to the ADC.
 - 12 bit ADC => 4096
 - Only big breaths trigger… read ~200-350 ADC with large breadth
