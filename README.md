@@ -1,3 +1,7 @@
+#### This sensor was abandoned because it doesn't have any mounting holes or easy method to seal against a tube. An ongoing airflow sensor is here: [AFH55M12](https://github.com/hydronics2/COVID-19-Airflow-Sensor-AFH55M12) 
+
+
+
 # Airflow - Sensor Automotive Hack
 
 ## Project Description ([from Helpful Engineering](https://www.helpfulengineering.org/))
@@ -23,7 +27,7 @@ Reading from an automotive mass airflow sensor using a microController 12bit ADC
 - showing what I thought were normal inhale breaths for me at ~1200mL each (6', 150lbs male)
 - these breaths are larger than normal tidal volume delivered during mechanical ventilation (should be closer to ~350-500 mL)
 - I think plus/minus 25mL should be fine... previously the spec said +/- 10mL...
-- I haven't wired the pressure sensor as I don't think it'll read anything interesting until we can introduce PEEP which needs to happen in a closed system, right? 
+- I haven't wired the pressure sensor as I don't think it'll read anything interesting until we can introduce PEEP which needs to happen in a closed system, right?
 
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/automotive_sensor.PNG)
 ![foo](https://github.com/hydronics2/COVID-19-Airflow-Sensor-Automotive-Hack/blob/master/pics/sensor_in_tube.PNG)
