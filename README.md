@@ -1,4 +1,4 @@
-#### This sensor was abandoned because it doesn't have any mounting holes or easy method to seal against a tube. An ongoing airflow sensor is here: [AFH55M12](https://github.com/hydronics2/COVID-19-Airflow-Sensor-AFH55M12) 
+#### This sensor was abandoned because it doesn't have any mounting holes or easy method to seal against a tube. An ongoing airflow sensor project is here: [AFH55M12](https://github.com/hydronics2/COVID-19-Airflow-Sensor-AFH55M12) 
 
 
 
